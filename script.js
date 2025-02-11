@@ -20,7 +20,7 @@ function getComputerChoice(max){
 }
 //Create a function where the human will input their choice aand return it
 function getHumanChoice(){
-    let choice = prompt("Rock, Paper, or Scissors?");
+    let choice = prompt("Rock, Paper, or Scissors?").toLowerCase();
     while (choice != rock && choice != paper && choice != scissors){
         choice = prompt("You can only type rock, paper, or scissors.");
     }
