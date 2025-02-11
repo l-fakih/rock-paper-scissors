@@ -33,12 +33,15 @@ function playGame(){
     let compScore = 0;
     //iterate over the loop until the user scores 5 points
     while ((humanScore != 5) && (compScore != 5)){
+        let humanSelection = getHumanChoice();
+        let computerSelection = getComputerChoice(3);
         playRound(humanSelection, computerSelection)
     }
     //if user scores 5 points, print out a "you win" alert
     if (humanScore === 5){
         return alert("You won!");
     }
+    else return alert("You lost!")
     //Create a function for the round:
     // Compare humanChoice with computerChoice, increment score to the winner
     function playRound(humanChoice, computerChoice) {
@@ -58,7 +61,5 @@ function playGame(){
         }
         }
 }
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice(3);
 playGame();
   
