@@ -58,7 +58,7 @@ function playGame(){
         }
         }
 }
-let humanSelection = getHumanChoice();
-let computerSelection = getComputerChoice(3);
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice(3);
 playGame();
   
